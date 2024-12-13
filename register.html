@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body class="register_body">
+    <div class="main_page_left">
+      <div class="overlay"></div>
+    </div>
+    <div class="main_page_right">
+      <div id="register-page" class="page">
+        <h1>Register</h1>
+        <form id="register-form">
+          <div class="reg_input">
+            <input type="text" id="username" placeholder="Username" />
+            <p id="username_err"></p>
+          </div>
+          <div class="reg_input">
+            <input type="text" id="email" placeholder="Email Address" />
+            <p id="email_err"></p>
+          </div>
+          <div class="reg_input">
+            <input type="password" id="password" placeholder="Password" />
+            <p id="password_err"></p>
+          </div>
+          <div class="reg_input">
+            <input type="password" id="confirm-password" placeholder="Confirm Password" />
+            <p id="submit_err"></p>
+          </div>
+          <button type="submit">Register</button>
+        </form>
+        <p id="go-to-login" onclick="location.href='login.html'">
+          Already have an account? <span>Login</span>
+        </p>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>

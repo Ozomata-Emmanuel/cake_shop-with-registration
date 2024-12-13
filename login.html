@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/jquery-3.7.1.min.js"></script>
+</head>
+<body class="body">
+    <div class="app">
+        <div id="login-page" class="page active">
+            <h1>Login</h1>
+            <form id="login-form">
+                <div class="log_input">
+                    <input type="text" id="login-email" placeholder="Email Address">
+                    <p id="login_email_err"></p>
+                </div>
+                <div class="log_input">
+                    <input type="password" id="login-password" placeholder="Password">
+                    <p id="login_password_err"></p>
+                </div>
+                <button type="submit">Login</button>
+                <p id="nonExisting"></p>
+            </form>
+            <p id="go-to-register" onclick="location.href='register.html'">Don't have an account? <span>register now</span></p>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
